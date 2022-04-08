@@ -22,6 +22,14 @@
         <div class="container bg-secondary py-4">
             <div class="p-5 mb-4 bg-light text-dark rounded-3">
                 <h2>Table Viewer</h2>
+                <h4 text-align="center">Hello, you are logged in</h4>
+                <form action={{ url_for('crud.logout') }}>
+                    <input type="submit" value="Logout">
+                </form>
+                <form action={{ url_for('crud.logoutrefresh') }}>
+                    <input type="submit" value="Logout Refresh">
+                </form>
+                <button type="submit" text-align="center" value="logout" form action="{{ url_for('crud.logout') }}"></button>button>
                 <div class="row align-items-md-stretch">
                     <table class="table">
                         <tbody>
